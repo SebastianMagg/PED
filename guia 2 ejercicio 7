@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int numeros(int n){
+    
+    n = 0;
+    n++;
+    
+   return n;
+}
+
+int main()
+{
+    int a=0;
+    int b=0;
+    
+     cout << "digite el numero inicial: " << endl;
+     cin >> a;
+   
+     cout << "digite el numero final: " << endl;
+     cin >> b;
+  
+    for(int numeros=a+1;numeros<b;numeros++){
+        cout<<numeros<<endl;
+    }
+    
+    return 0;
+}
+
