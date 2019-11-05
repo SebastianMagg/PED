@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+void imprimirLista(int a, int b);
+
+int main()
+{
+    int sup=0, inf=0;
+    
+    cout<<"ingrese el limite inferior: ";
+    cin>>inf;
+    cout<<"ingrese el limite superior: ";
+    cin>>sup;
+    
+    imprimirLista(inf,sup);
+
+    return 0;
+}
+
+void imprimirLista(int a, int b){
+    if(a<b && a+1!=b){
+        cout<<(a+1)<<endl;
+        imprimirLista(a+1,b);
+    }
+}
